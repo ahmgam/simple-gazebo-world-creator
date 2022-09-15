@@ -21,6 +21,7 @@ class GazeboWorldCreator:
         self.file += f"""
         <sdf version=\'1.4\'>
         <world name=\'{self.name}\'>
+        <plugin name='ros_interface_plugin' filename='librotors_gazebo_ros_interface_plugin.so' />
             """
         
     def _defineConfig(self):
